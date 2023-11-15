@@ -14,10 +14,12 @@ body,
 
 .gifContainer {
   width: 100%;
+  max-width: 100vw;
   height: auto;
+  overflow: hidden;
   margin-bottom: 16px;
 }
-.gif {
+.videoLower {
   width: 100%;
   height: 100%;
   object-fit: cover;
