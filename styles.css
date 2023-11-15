@@ -3,12 +3,83 @@
 }
 
 /*har lagt in font families här under bara, men vi får göra en @font-face eller något sen som vi kan återanvända, har inte hunnit sätta mig in i det */
-.footerButton,
-.footerContent {
+body,
+.subscribeButton,
+.inputEmail {
   font-family: "IBM Plex Sans", sans-serif;
+  margin: 0%;
+}
+
+/*gif styles*/
+
+.gifContainer {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+.gif {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*styles for newsletter section*/
+
+.newsletter,
+.footerButton {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newsHeader,
+.subscribeButton {
+  font-size: 24px;
+}
+.paragraph,
+.inputEmail {
+  font-size: 16px;
+}
+.inputEmail {
+  margin-top: 25px;
+  padding-bottom: 5px;
+}
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+.newsHeader {
+  margin-bottom: 0px;
+}
+.paragraph {
+  margin: 0px;
+}
+.subscribeButton,
+.inputEmail {
+  background-color: transparent;
+  border-style: none;
+}
+.subscribeButton {
+  margin-top: 52px;
+  margin-bottom: 52px;
+}
+.inputEmail {
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+
+.newsletter {
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
 }
 
 /*footer styles*/
+
 .footer {
   width: 100%;
   height: 25px;
@@ -19,8 +90,7 @@
   height: 25px;
   width: 100%;
   align-items: center;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-bottom: 10px;
 }
 
 .footerButton {
@@ -32,6 +102,8 @@
   background-color: #fff;
   width: 100%;
   height: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-weight: 600;
   display: flex;
   justify-content: space-between;
