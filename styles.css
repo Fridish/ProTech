@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 :root {
   /* colors goes here... */
 }
@@ -156,47 +154,3 @@ body {
   object-fit: cover;
   z-index: 0;
 }
-/*har lagt in font families här under bara, men vi får göra en @font-face eller något sen som vi kan återanvända, har inte hunnit sätta mig in i det */
-.footerButton,
-.footerContent {
-  font-family: "IBM Plex Sans", sans-serif;
-}
-
-/*footer styles*/
-.footer {
-  width: 100%;
-  height: 25px;
-  position: fixed;
-  bottom: 0;
-  z-index: 1;
-}
-.collaplsibleBox {
-  display: flex;
-  justify-content: space-between;
-  height: 25px;
-  width: 100%;
-  align-items: center;
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-.footerButton {
-  cursor: pointer;
-  display: flex;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  background-color: #fff;
-  width: 100%;
-  height: 25px;
-  font-weight: 600;
-  display: flex;
-  justify-content: space-between;
-}
-.footerContent {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease-out;
-  background-color: rgb(235, 235, 235);
-}
->>>>>>> Stashed changes
