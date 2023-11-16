@@ -1,7 +1,6 @@
 :root {
   /* colors goes here... */
 }
-<<<<<<< HEAD
 /* Header CSS Styling */
 
 * {
@@ -154,8 +153,7 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: 0;
-=======
-
+}
 /*har lagt in font families här under bara, men vi får göra en @font-face eller något sen som vi kan återanvända, har inte hunnit sätta mig in i det */
 body,
 .subscribeButton,
@@ -285,5 +283,4 @@ form {
 .footerLogos {
   display: flex;
   justify-content: space-between;
->>>>>>> main
 }
