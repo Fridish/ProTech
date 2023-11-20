@@ -5,7 +5,6 @@
 
 * {
   font-family: "IBM Plex Sans", sans-serif;
-  font-family: "Tilt Neon", sans-serif;
 }
 
 *,
@@ -155,10 +154,7 @@ body {
   z-index: -1;
 }
 /*har lagt in font families här under bara, men vi får göra en @font-face eller något sen som vi kan återanvända, har inte hunnit sätta mig in i det */
-body,
-.subscribeButton,
-.inputEmail {
-  font-family: "IBM Plex Sans", sans-serif;
+body {
   margin: 0%;
 }
 
@@ -178,8 +174,46 @@ body,
   height: 100%;
   object-fit: cover;
 }
+/*styles for info section*/
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.informationBox {
+  width: 100%;
+  height: 300px;
+  background-color: #2a2a2b;
+  padding-top: 40px;
+}
+.infoHeader {
+  font-size: 80px;
+  color: #fff;
+  margin: 0px;
+}
+.infoText,
+.infoLink {
+  font-size: 16px;
+  color: #fff;
+}
+.infoText {
+  font-weight: 600;
+}
 
 /*styles for newsletter section*/
+
+.newsletterContainer {
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
 
 .newsletter,
 .footerButton {
