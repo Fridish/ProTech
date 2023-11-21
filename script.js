@@ -13,3 +13,21 @@ for (i = 0; i < collapseButton.length; i++) {
     }
   });
 }
+
+const carousel = new Glide(".glide", {
+  type: "carousel",
+  autoplay: 4000,
+  breakpoints: {
+    1440: {
+      perView: 3,
+    },
+    1024: {
+      perView: 2,
+    },
+    768: {
+      perView: 1,
+    },
+  },
+});
+
+carousel.mount();
