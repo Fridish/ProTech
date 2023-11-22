@@ -382,7 +382,11 @@ form {
   border-bottom: 2px solid black;
   width: 100%;
 }
-
+#newsImg {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
 .newsletter {
   background-color: rgb(238, 238, 238);
   display: flex;
@@ -437,10 +441,10 @@ form {
   margin-bottom: 12px;
 }
 .footerButton:after {
-  content: " + ";
+  content: url(media/plus.svg);
 }
 .visible:after {
-  content: "-";
+  content: url(media/minus.svg);
 }
 .footerLogos {
   display: flex;
