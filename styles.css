@@ -416,7 +416,7 @@ form {
   font-weight: 600;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 32;
+  margin-bottom: 20px;
 }
 .footerContent {
   max-height: 0;
@@ -439,4 +439,37 @@ form {
 .footerLogos {
   display: flex;
   justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .collapsibleBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-start: 2;
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .footerButton {
+    cursor: default;
+  }
+  .footerButton:after {
+    content: none;
+  }
+  .visible:after {
+    content: none;
+  }
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+  .footerIconContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .mediaIcon {
+    width: 18px;
+    height: 18px;
+  }
 }
