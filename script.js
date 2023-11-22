@@ -1,19 +1,3 @@
-// footer buttons collapsable, WIP
-let collapseButton = document.getElementsByClassName("footerButton");
-let i;
-//kollar om knappen är tryckt, är den det blir + = - och tvärtom. Allt content syns då även.
-for (i = 0; i < collapseButton.length; i++) {
-  collapseButton[i].addEventListener("click", function () {
-    this.classList.toggle("visible");
-    let buttonContent = this.nextElementSibling;
-    if (buttonContent.style.maxHeight) {
-      buttonContent.style.maxHeight = null;
-    } else {
-      buttonContent.style.maxHeight = buttonContent.scrollHeight + "px";
-    }
-  });
-}
-
 const carousel = new Glide(".glide", {
   type: "carousel",
   autoplay: 4000,
@@ -31,3 +15,34 @@ const carousel = new Glide(".glide", {
 });
 
 carousel.mount();
+
+//Footer Collapse börjar här
+
+let collapseButton = document.getElementsByClassName("footerButton");
+
+//expandera och kollapsa footer
+function toggleVisibility() {
+  this.classList.toggle("visible");
+  let buttonContent = this.nextElementSibling;
+  if (this.classList.contains("visible")) {
+    buttonContent.style.maxHeight = buttonContent.scrollHeight + "px";
+  } else {
+    buttonContent.style.maxHeight = null;
+  }
+}
+//Ser till att knappen inte funkar, utan allt content syns, när fönstret är större än 768px
+function updateButtonListeners() {
+  for (let i = 0; i < collapseButton.length; i++) {
+    let buttonContent = collapseButton[i].nextElementSibling;
+    if (window.innerWidth <= 768) {
+      collapseButton[i].addEventListener("click", toggleVisibility);
+      buttonContent.style.maxHeight = null;
+    } else {
+      collapseButton[i].removeEventListener("click", toggleVisibility);
+      buttonContent.style.maxHeight = buttonContent.scrollHeight + "px";
+    }
+  }
+}
+updateButtonListeners();
+//Ser till att footern uppdateras när fönstret ändrar storlek
+window.addEventListener("resize", updateButtonListeners);
