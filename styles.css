@@ -425,10 +425,11 @@ form {
   transition: max-height 0.4s ease-out;
   margin-left: 16px;
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 .footerContent > * {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 .footerButton:after {
   content: " + ";
@@ -443,7 +444,7 @@ form {
 @media (min-width: 768px) {
   .collapsibleBox {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-column-start: 2;
     margin-top: 80px;
     margin-left: 80px;
@@ -463,6 +464,13 @@ form {
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 80px;
+    gap: 24px;
+    overflow:visible;
+  }
+    .footerContent > * {
+      margin-top: 0;
+      margin-bottom:0;
+    }
   }
   .footerIconContainer {
     display: flex;
