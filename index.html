@@ -52,7 +52,8 @@
           <img src="images/Icon Frame.svg" alt="" />
         </div>
         <div class="symbol">
-          <img src="images/Bag_alt_light.svg" alt="" />
+          <img class="desktop-bag" src="images/Bag_alt_light.svg" alt="" />
+          <img src="images/Shopping-bag.svg" alt="" class="mobile-bag" />
         </div>
       </div>
       <label class="hamburger-menu">
@@ -60,6 +61,11 @@
       </label>
       <aside class="sidebar">
         <nav>
+          <div><a href="#" id="btn-language-mobile">SPRÅK</a></div>
+          <div id="languages">
+            <a href="#">English</a>
+            <a href="#">Svenska</a>
+          </div>
           <div>PRODUKTER</div>
           <div>UTFORSKA</div>
           <div>OM OSS</div>
@@ -68,37 +74,37 @@
       </aside>
     </header>
     <!-- Hero -->
-    <div class="hero">
-      <div class="img hero">
+    <section class="hero">
         <div class="productInfo">
-          <p>Model 2020</p>
-          <p>Pro Max Case</p>
+          <section>Model 2020</section>
+          <section>Pro Max Case</section>
         </div>
         <div class="slogan">
-          <h3>Keep cool</h3>
-          <h3>Keep going</h3>
+          <p>Keep cool</p>
+          <p>Keep going</p>
         </div>
-        <img
+        <img src="images/Grönresväska.png" alt="" class="hero-pic-mobile" />
+        <!--      <img
           class="hero-pic"
-          src="images/Grönresväska.png"
+          src="images/desktop-resväska.png"
           alt="lightgreen case"
-        />
-        <button type="button" class="btn-buyNow">
-          KÖP NU <img class="arrowRight" src="images/ArrowRight.png" alt="" />
-        </button>
+        /> -->
+        <a href="#" class="btn-hero">
+          KÖP NU <img class="arrowRight" src="images/ArrowRight.png" />
+        </a>
       </div>
-    </div>
+    </section>
 
     <!-- Här börjar sektionen för kategorier -->
     <div class="categories">
       <h2 class="categoryHeader">Kategorier</h2>
       <div class="glide">
-        <div class="glide__track" data-glide-el="track">
+        <div class="glide_track" data-glide-el="track">
           <ul class="glide__slides">
             <li class="glide__slide">
               <img src="images/Mask group.png" alt="" />
               <button type="button" class="btn-buyNow-category">
-                ELEKTRONIK
+                <section>ELEKTRONIK</section>
                 <img
                   class="arrowRight-category"
                   src="images/ArrowRight.png"
@@ -107,9 +113,9 @@
               </button>
             </li>
             <li class="glide__slide">
-              <img src="images/Grönresväska.png" alt="" />
+              <img src="images/PowerBank.png" alt="" />
               <button type="button" class="btn-buyNow-category">
-                VÄSKOR
+                <section>VÄSKOR</section>
                 <img
                   class="arrowRight-category"
                   src="images/ArrowRight.png"
@@ -120,7 +126,7 @@
             <li class="glide__slide">
               <img src="images/bluehorlurar.png" alt="" />
               <button type="button" class="btn-buyNow-category">
-                ACCESSOARER
+                <section>ACCESSOARER</section>
                 <img
                   class="arrowRight-category"
                   src="images/ArrowRight.png"

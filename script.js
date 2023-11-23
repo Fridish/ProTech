@@ -1,8 +1,28 @@
+// Script för att lösa språkalternativet i sidebaren i headern.
+
+document
+  .getElementById("btn-language-mobile")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // prevent the default action
+    var languageOptions = document.getElementById("languages");
+    if (languageOptions.style.display === "none") {
+      languageOptions.style.display = "block";
+    } else {
+      languageOptions.style.display = "none";
+    }
+  });
+
 const carousel = new Glide(".glide", {
   type: "carousel",
   autoplay: 4000,
   breakpoints: {
+    1800: {
+      perView: 4,
+    },
     1440: {
+      perView: 4,
+    },
+    1300: {
       perView: 3,
     },
     1024: {
