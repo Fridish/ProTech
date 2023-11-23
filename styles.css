@@ -548,6 +548,11 @@ body {
 }
 
 /*styles for newsletter section*/
+#staycool {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
 
 .newsletterContainer {
   background-color: rgb(238, 238, 238);
@@ -602,7 +607,11 @@ form {
   border-bottom: 2px solid black;
   width: 100%;
 }
-
+#newsImg {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
 .newsletter {
   background-color: rgb(238, 238, 238);
   display: flex;
@@ -657,16 +666,78 @@ form {
   margin-bottom: 12px;
 }
 .footerButton:after {
-  content: " + ";
+  content: url(media/plus.svg);
 }
 .visible:after {
-  content: "-";
+  content: url(media/minus.svg);
 }
 .footerLogos {
   display: flex;
   justify-content: space-between;
 }
 @media (min-width: 768px) {
+  /*newsletter styles*/
+  .newsletterContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  #newsImg {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+  }
+  .newsletter {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  .newsHeader {
+    font-size: 24px;
+  }
+  .Paragraph {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 164px;
+    margin-top: 16px;
+  }
+  .inputEmail {
+    width: auto;
+    border-bottom: none;
+    width: calc(100% - 175px);
+    font-size: 20px;
+    padding-bottom: 8px;
+    margin-top: 0px;
+  }
+  ::placeholder {
+    margin-bottom: 8px;
+  }
+  form {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .border {
+    border-top: 2px solid black;
+    width: 100%;
+    padding-bottom: 80px;
+  }
+  .subscribeButton {
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 0px;
+  }
+  #staycool {
+    font-size: 64px;
+    margin-bottom: 0px;
+    width: auto;
+    height: auto;
+  }
+  /*footer styles*/
   .collapsibleBox {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -703,5 +774,4 @@ form {
   .mediaIcon {
     width: 18px;
     height: 18px;
-  }
 }
