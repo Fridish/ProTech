@@ -505,6 +505,7 @@ body {
 
 .videoContainer {
   width: 100%;
+  margin-top: 80px;
   max-width: 100vw;
   height: auto;
   overflow: hidden;
@@ -522,7 +523,7 @@ body {
 #swiper1 {
   width: auto;
   height: 340px;
-  margin-top: 40px;
+  margin-top: 80px;
   padding-left: 0px;
   padding-right: 0px;
   margin-left: 0px;
@@ -682,10 +683,10 @@ form {
   margin-bottom: 12px;
 }
 .footerButton:after {
-  content: url(media/plus.svg);
+  content: url(Media/plus.svg);
 }
 .visible:after {
-  content: url(media/minus.svg);
+  content: url(Media/minus.svg);
 }
 .footerLogos {
   display: flex;
@@ -801,5 +802,23 @@ form {
   }
   .paragraph {
     font-size: 20px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background: #2a2a2b;
+  }
+  .footerButton,
+  .hero {
+    background-color: transparent;
+    color: #eee;
+  }
+  .mediaIcon,
+  #filter,
+  header,
+  .footerButton:after,
+  .visible:after {
+    filter: invert(1);
   }
 }
