@@ -33,14 +33,43 @@
       <div class="logo">
         <img src="images/logo.svg" alt="logo" />
       </div>
-      <div class="cart-symbol">
-        <img src="images/Shopping-bag.svg" alt="" />
+      <div class="sidebar-desktop">
+        <a href="/">PRODUKTER</a>
+        <a href="/">UTFORSKA</a>
+        <a href="/">OM OSS</a>
+        <a href="/">SUPPORT</a>
+      </div>
+      <div class="symbols">
+        <div class="symbol">
+          <img src="images/Search.svg" alt="" />
+        </div>
+        <div class="dropdown">
+          <button class="symbol">
+            <img src="images/material-symbols-light_language.svg" alt="" />
+          </button>
+          <div class="language-alt">
+            <a href="/">Swedish</a>
+            <a href="/">English</a>
+          </div>
+        </div>
+        <div class="symbol">
+          <img src="images/Icon Frame.svg" alt="" />
+        </div>
+        <div class="symbol">
+          <img class="desktop-bag" src="images/Bag_alt_light.svg" alt="" />
+          <img src="images/Shopping-bag.svg" alt="" class="mobile-bag" />
+        </div>
       </div>
       <label class="hamburger-menu">
         <input type="checkbox" />
       </label>
       <aside class="sidebar">
         <nav>
+          <div><a href="#" id="btn-language-mobile">SPRÅK</a></div>
+          <div id="languages">
+            <a href="#">English</a>
+            <a href="#">Svenska</a>
+          </div>
           <div>PRODUKTER</div>
           <div>UTFORSKA</div>
           <div>OM OSS</div>
@@ -49,27 +78,26 @@
       </aside>
     </header>
     <!-- Hero -->
-    <div class="hero">
-      <div class="img hero">
-        <!-- <img src="images/Grönresväska.png" alt="lightgreen case" /> -->
+    <section class="hero">
         <div class="productInfo">
-          <p>Model 2020</p>
-          <p>Pro Max Case</p>
+          <section>Model 2020</section>
+          <section>Pro Max Case</section>
         </div>
         <div class="slogan">
-          <h3>Keep cool</h3>
-          <h3>Keep going</h3>
+          <p>Keep cool</p>
+          <p>Keep going</p>
         </div>
-        <img
+        <img src="images/Grönresväska.png" alt="" class="hero-pic-mobile" />
+        <!--      <img
           class="hero-pic"
-          src="images/Grönresväska.png"
+          src="images/desktop-resväska.png"
           alt="lightgreen case"
-        />
-        <button type="button" class="btn-buyNow">
-          KÖP NU <img class="arrowRight" src="images/ArrowRight.png" alt="" />
-        </button>
+        /> -->
+        <a href="#" class="btn-hero">
+          KÖP NU <img class="arrowRight" src="images/ArrowRight.png" />
+        </a>
       </div>
-    </div>
+    </section>
 
     <!-- Här börjar sektionen för kategorier -->
     <div class="categories">
@@ -80,7 +108,7 @@
             <li class="glide__slide">
               <img src="images/Mask group.png" alt="" />
               <button type="button" class="btn-buyNow-category">
-                ELEKTRONIK
+                <section>ELEKTRONIK</section>
                 <img
                   class="arrowRight-category"
                   src="images/ArrowRight.png"
@@ -89,9 +117,9 @@
               </button>
             </li>
             <li class="glide__slide">
-              <img src="images/Grönresväska.png" alt="" />
+              <img src="images/PowerBank.png" alt="" />
               <button type="button" class="btn-buyNow-category">
-                VÄSKOR
+                <section>VÄSKOR</section>
                 <img
                   class="arrowRight-category"
                   src="images/ArrowRight.png"
@@ -102,7 +130,7 @@
             <li class="glide__slide">
               <img src="images/bluehorlurar.png" alt="" />
               <button type="button" class="btn-buyNow-category">
-                ACCESSOARER
+                <section>ACCESSOARER</section>
                 <img
                   class="arrowRight-category"
                   src="images/ArrowRight.png"
