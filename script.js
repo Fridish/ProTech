@@ -66,3 +66,23 @@ function updateButtonListeners() {
 updateButtonListeners();
 //Ser till att footern uppdateras när fönstret ändrar storlek
 window.addEventListener("resize", updateButtonListeners);
+
+//info section swiper
+const swiper = new Swiper("#swiper1", {
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: "#swiper1 .swiper-pagination",
+  },
+  breakpoints: {
+    645: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    950: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+  },
+});
