@@ -497,7 +497,6 @@ body {
   bottom: 57px;
 }
 
-/*har lagt in font families här under bara, men vi får göra en @font-face eller något sen som vi kan återanvända, har inte hunnit sätta mig in i det */
 body {
   margin: 0%;
 }
@@ -714,11 +713,11 @@ form {
     margin-right: 32px;
   }
   .newsHeader {
-    font-size: 24px;
+    font-size: 16px;
   }
-  .Paragraph {
+  .paragraph {
     text-align: center;
-    font-size: 20px;
+    font-size: 14px;
     margin-bottom: 164px;
     margin-top: 16px;
   }
@@ -749,7 +748,7 @@ form {
     margin-top: 0px;
   }
   #staycool {
-    font-size: 64px;
+    font-size: 50px;
     margin-bottom: 0px;
     width: auto;
     height: auto;
@@ -783,5 +782,24 @@ form {
   .footerContent > * {
     margin-top: 0;
     margin-bottom: 0;
+  }
+}
+@media (min-width: 900px) {
+  #staycool {
+    font-size: 64px;
+  }
+  .newsHeader {
+    font-size: 18px;
+  }
+  .paragraph {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1065px) {
+  .newsHeader {
+    font-size: 24px;
+  }
+  .paragraph {
+    font-size: 20px;
   }
 }
