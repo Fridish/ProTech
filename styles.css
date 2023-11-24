@@ -29,7 +29,6 @@ body {
   --x-width: calc(var(--hamburger-height) * 1.2);
 }
 .header {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +36,9 @@ body {
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 9999;
+  position: fixed;
+  top: 0px;
 }
 
 .logo {
