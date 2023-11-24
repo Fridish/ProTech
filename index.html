@@ -16,6 +16,10 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/css/glide.theme.css"
     />
     <script src="https://unpkg.com/@glidejs/glide@3.3.0/dist/glide.min.js"></script>
@@ -110,7 +114,7 @@
         </div>
       </div>
     </div>
-    <!-- här börjar sektionen för videosektionen -->
+    <!-- här börjar videosektionen -->
     <div class="videoContainer">
       <video
         class="videoLower"
@@ -121,14 +125,29 @@
         src="Media/turntable0001-0099.mp4"
       ></video>
     </div>
+
     <!-- Här börjar infosektionen -->
-    <div class="infoContainer">
-      <div class="informationBox">
-        <p class="infoHeader">96%</p>
-        <p class="infoText">AV VÅRA KUNDER ÄR NÖJDA</p>
-        <a class="infoLink" href=""> LÄS OMDÖMEN HÄR</a>
+    <div class="swiper" id="swiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <p class="infoHeader">96%</p>
+          <p class="infoText">AV VÅRA KUNDER ÄR NÖJDA</p>
+          <a class="infoLink" href=""> BLI MEDLEM </a>
+        </div>
+        <div class="swiper-slide">
+          <p class="infoHeader">GRATIS</p>
+          <p class="infoText">RETUR OCH LEVERANS</p>
+          <a class="infoLink" href=""> LÄS OMDÖMEN HÄR</a>
+        </div>
+        <div class="swiper-slide">
+          <p class="infoHeader">2 ÅR</p>
+          <p class="infoText">GARANTI PÅ VÅRA PRODUKTER</p>
+          <a class="infoLink" href=""> SE VILLKOR </a>
+        </div>
       </div>
-      <div class="scrollButtons"></div>
+      <div class="paginationPosition">
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
 
     <!-- Här börjar sektionen för nyhetsbrevet -->
@@ -142,8 +161,8 @@
         <p id="staycool">STAY COOL</p>
         <h3 class="newsHeader">PRENUMERERA PÅ VÅRT NYHETSBREV</h3>
         <p class="Paragraph">
-          Ta emot e-postuppdateringar om exklusiva erbjudanden och produkt
-          nyheter
+          Ta emot e-postuppdateringar om exklusiva erbjudanden och
+          produktnyheter
         </p>
         <form>
           <input class="inputEmail" type="text" placeholder="E-MAIL" />
@@ -218,6 +237,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
