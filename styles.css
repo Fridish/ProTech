@@ -1,5 +1,11 @@
 :root {
-  /* colors goes here... */
+  --lightGrey: #d5d5d4;
+  --black: #2a2a2b;
+  --white: #f3f3f3;
+  --superWhite: #fff;
+  --orange: #ef942e;
+  --grey: #d1d1d1;
+  --green: #74856d;
 }
 /* Header CSS Styling */
 
@@ -11,6 +17,14 @@
 *::after,
 *::before {
   box-sizing: border-box;
+}
+button:hover {
+  background-color: var(--orange);
+}
+@media (min-width: 768px) {
+  button:hover {
+    background-color: var(--green);
+  }
 }
 
 body {
@@ -315,7 +329,7 @@ body {
   right: 100px;
   line-height: 60px;
   font-size: 48px;
-  color: #2a2a2b;
+  color: var(--white);
   font-style: normal;
   z-index: 0;
 }
@@ -360,44 +374,57 @@ body {
   right: 16px;
   bottom: 57px;
 }
-.btn-hero:hover {
-  background-color: #74856d;
+
+.hero-pic-desktop {
+  display: none;
 }
 
 @media (min-width: 768px) {
   .hero-pic-mobile {
     display: none;
   }
-  .hero-inner {
-    position: relative;
+
+  .hero {
     width: 100%;
-    height: 100%;
-    background-image: url("images/desktop-resväska.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    max-width: 100vw;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+  }
+
+  .hero-pic-desktop {
+    display: flex;
+    width: 100%;
+    object-fit: contain;
   }
 
   .productInfo {
     position: absolute;
-    left: 0;
-    top: 10%;
+    top: 688px;
+    left: 80px;
     z-index: 1;
+    color: var(--black);
+    font-size: 24px;
+    line-height: 32px;
   }
   .slogan {
     position: absolute;
-    top: 50%;
-    left: 0;
+    top: 500px;
+    left: 80px;
     z-index: 1;
+    color: var(--black);
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .slogan p {
+    display: inline-block;
   }
 
-  .hero-pic {
-    display: block;
-  }
   .btn-hero {
     position: absolute;
-    bottom: 16px;
-    left: 16px;
+    bottom: 124px;
+    left: 80px;
     width: 343px;
     max-width: 400px;
     height: 52px;
@@ -422,9 +449,6 @@ body {
     color: #2a2a2b;
     right: 16px;
     bottom: 57px;
-  }
-  .btn-hero:hover {
-    background-color: #ef942e;
   }
 }
 
@@ -478,14 +502,18 @@ body {
 }
 
 .glidebullet {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   margin: 0 4px;
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: #ccc;
+  background-color: var(--lightGrey);
+}
+
+.glidebullet.glidebullet-active {
+  background-color: var(--orange);
 }
 
 .btn-buyNow-category {
@@ -804,5 +832,60 @@ form {
   .footerContent > * {
     margin-top: 0;
     margin-bottom: 0;
+  }
+}
+@media (min-width: 900px) {
+  #staycool {
+    font-size: 64px;
+  }
+  .newsHeader {
+    font-size: 18px;
+  }
+  .paragraph {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1065px) {
+  .newsHeader {
+    font-size: 24px;
+  }
+  .paragraph {
+    font-size: 20px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--black);
+  }
+  footer,
+  .newsletter,
+  .info {
+    color: var(--white);
+  }
+  .newsletter,
+  .infoHeader,
+  .infoLink,
+  .infoText {
+    color: var(--black);
+  }
+  .footerButton,
+  .hero {
+    background-color: transparent;
+    color: var(--white);
+  }
+  .mediaIcon,
+  .footerButton:after,
+  .visible:after,
+  .header {
+    filter: invert(1);
+  }
+  .header {
+    background-color: #d5d5d4; /*inverted black*/
+  }
+  .swiper-slide {
+    background-color: var(--white);
+  }
+  .categories {
+    color: var(--white);
   }
 }

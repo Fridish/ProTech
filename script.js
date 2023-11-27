@@ -12,15 +12,13 @@ document
     }
   });
 
-const carousel = new Glide(".glide", {
+const glide = new Glide(".glide", {
   type: "carousel",
   autoplay: 4000,
+  rewind: true,
   breakpoints: {
     1800: {
-      perView: 4,
-    },
-    1440: {
-      perView: 4,
+      perView: 3,
     },
     1300: {
       perView: 3,
@@ -34,7 +32,22 @@ const carousel = new Glide(".glide", {
   },
 });
 
-carousel.mount();
+// Funktion för att ändra paginationsglidern till orange vid aktivt läge.
+
+const glideBullets = document.querySelectorAll(".glidebullet");
+glide.on("run", function () {
+  const activeIndex = glide.index;
+
+  glideBullets.forEach(function (bullet, index) {
+    if (index === activeIndex) {
+      bullet.classList.add("glidebullet-active");
+    } else {
+      bullet.classList.remove("glidebullet-active");
+    }
+  });
+});
+
+glide.mount();
 
 //Footer Collapse börjar här
 
