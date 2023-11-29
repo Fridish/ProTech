@@ -19,6 +19,7 @@ const glide = new Glide(".glide", {
       perView: 3,
     },
     1300: {
+      autoplay: 0,
       perView: 3,
     },
     1024: {
