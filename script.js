@@ -65,7 +65,7 @@ function toggleVisibility() {
     buttonContent.style.maxHeight = null;
   }
 }
-//Ser till att knappen inte funkar, utan allt content syns, när fönstret är större än 768px
+//Ser till att footerknappen inte funkar, utan allt content syns, när fönstret är större än 768px
 function updateButtonListeners() {
   for (let i = 0; i < collapseButton.length; i++) {
     let buttonContent = collapseButton[i].nextElementSibling;
@@ -85,8 +85,6 @@ window.addEventListener("resize", updateButtonListeners);
 //info section swiper
 const swiper = new Swiper("#swiper1", {
   loop: true,
-
-  // If we need pagination
   pagination: {
     el: "#swiper1 .swiper-pagination",
   },
