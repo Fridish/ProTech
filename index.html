@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    
+
     <link
       rel="stylesheet"
       href=" https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/css/glide.core.css"
@@ -80,25 +80,41 @@
     </header>
     <!-- Hero -->
     <section class="hero">
-        <div class="productInfo">
-          <section>Model 2000</section>
-          <section>IDC 1090</section>
-        </div>
-        <div class="slogan">
-          <p>Keep cool</p>
-          <p>Keep going</p>
-        </div>
-        <img src="images/Grönresväska.png" alt="" class="hero-pic-mobile" />
-        <img src="images/resväskaGif.gif" alt="" class="hero-pic-desktop" />
-        <!--      <img
+      <div class="productInfo">
+        <section>Model 2000</section>
+        <section>IDC 1090</section>
+      </div>
+      <div class="slogan">
+        <p>Keep cool</p>
+        <p>Keep going</p>
+      </div>
+
+      <video
+        class="hero-pic-desktop"
+        class="videoLower"
+        autoplay
+        loop
+        muted
+        playsinline
+        src="images/spinningproductsdesk.mp4"
+      ></video>
+      <video
+        class="hero-pic-mobile"
+        class="videoLower"
+        autoplay
+        loop
+        muted
+        playsinline
+        src="images/spinningproductsdesk.mp4"
+      ></video>
+      <!--      <img
           class="hero-pic"
           src="images/desktop-resväska.png"
           alt="lightgreen case"
         /> -->
-        <button href="#" class="btn-hero">
-          VA FÖRST <img class="arrowRight" src="images/ArrowRight.png" />
-        </button>
-      </div>
+      <button href="#" class="btn-hero">
+        VA FÖRST <img class="arrowRight" src="images/ArrowRight.png" />
+      </button>
     </section>
 
     <!-- Här börjar sektionen för kategorier -->
@@ -108,7 +124,16 @@
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
             <li class="glide__slide">
-              <img src="images/Mask group.png" alt="" />
+              <img
+                class="mobile-slide"
+                src="images/mobAdapterKlar.png"
+                alt=""
+              />
+              <img
+                class="desktop-slide"
+                src="images/adapterDesktopklar.png"
+                alt=""
+              />
               <button type="button" class="btn-buyNow-category">
                 <section>ELEKTRONIK</section>
                 <img
@@ -119,7 +144,16 @@
               </button>
             </li>
             <li class="glide__slide">
-              <img src="images/PowerBank.png" alt="" />
+              <img
+                class="mobile-slide"
+                src="images/mobHeadphoneKlar.png"
+                alt=""
+              />
+              <img
+                class="desktop-slide"
+                src="images/HörlurarBoxDesktopKlar.png"
+                alt=""
+              />
               <button type="button" class="btn-buyNow-category">
                 <section>VÄSKOR</section>
                 <img
@@ -130,7 +164,16 @@
               </button>
             </li>
             <li class="glide__slide">
-              <img src="images/bluehorlurar.png" alt="" />
+              <img
+                class="mobile-slide"
+                src="images/mobPowerbankKlar.png"
+                alt=""
+              />
+              <img
+                class="desktop-slide"
+                src="images/PowerbankDesktoKlar.png"
+                alt=""
+              />
               <button type="button" class="btn-buyNow-category">
                 <section>ACCESSOARER</section>
                 <img
@@ -145,7 +188,8 @@
             <button class="glidebullet" data-glide-dir="=0"></button>
             <button class="glidebullet" data-glide-dir="=1"></button>
             <button class="glidebullet" data-glide-dir="=2"></button>
-          </div>   
+          </div>
+        </div>
       </div>
     </div>
     <!-- här börjar videosektionen -->
@@ -156,7 +200,7 @@
         loop
         muted
         playsinline
-        src="Media/turntable0001-0099.mp4"
+        src="images/flygplanVäska.mp4"
       ></video>
     </div>
 
@@ -165,8 +209,8 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <p class="infoHeader">96%</p>
-          <p class="infoText">AV VÅRA KUNDER ÄR NÖJDA</p>
-          <a class="infoLink" href=""> BLI MEDLEM </a>
+          <p class="infoText">AV VÅRT MATERIAL ÄR ÅTERVUNNET</p>
+          <a class="infoLink" href=""> LÄS MER </a>
         </div>
         <div class="swiper-slide">
           <p class="infoHeader">GRATIS</p>
@@ -187,9 +231,14 @@
     <!-- Här börjar sektionen för nyhetsbrevet -->
     <div class="newsletterContainer">
       <img
-        id="newsImg"
-        src="Media/Horlurar1_blue_1280x720.png"
-        alt="Vita hörlurar i en blå förpackning"
+        id="newsImg-mobile"
+        src="images/allaProdukterMobile.png"
+        alt="Alla produkter på samma bild"
+      />
+      <img
+        id="newsImg-desktop"
+        src="images/allaProdukterDesk.png"
+        alt="Alla produkter på samma bild"
       />
       <div class="newsletter">
         <p id="staycool">STAY COOL</p>
