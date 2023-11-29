@@ -21,7 +21,9 @@
 button:hover {
   background-color: var(--orange);
 }
-
+button {
+  color: --black;
+}
 body {
   background-color: var(--white);
   margin: 0;
