@@ -14,8 +14,6 @@ document
 
 const glide = new Glide(".glide", {
   type: "carousel",
-  autoplay: 4000,
-  rewind: true,
   breakpoints: {
     1800: {
       perView: 3,
@@ -24,10 +22,14 @@ const glide = new Glide(".glide", {
       perView: 3,
     },
     1024: {
+      autoplay: 3000,
       perView: 2,
+      rewind: true,
     },
     768: {
+      autoplay: 3000,
       perView: 1,
+      rewind: true,
     },
   },
 });
