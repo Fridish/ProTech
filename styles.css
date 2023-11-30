@@ -22,7 +22,7 @@ button:hover {
   background-color: var(--orange);
 }
 button {
-  color: --black;
+  color: var(--black);
 }
 body {
   background-color: var(--white);
